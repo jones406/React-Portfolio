@@ -5,6 +5,8 @@ import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
+//To do: add a footer
+
 function App() {
   return (
     <div>

@@ -1,12 +1,47 @@
 import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import Card from '@material-ui/core/Card';
+import CardActionArea from '@material-ui/core/CardActionArea';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
 
-function Portfolio() {
+const useStyles = makeStyles({
+    root: {
+      maxWidth: 345,
+    },
+  });
 
+export default function Portfolio() {
+    const classes = useStyles();
+  
     return (
-        <div>
-        <p>PORTFOLIO STUFF</p>
-        </div>
+      <Card className={classes.root}>
+        <CardActionArea>
+          <CardMedia
+            className={classes.media}
+            image="/static/images/cards/contemplative-reptile.jpg"
+            title="Contemplative Reptile"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="h2">
+              TravelBuddy
+            </Typography>
+            <Typography variant="body2" color="textSecondary" component="p">
+              App info text
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+        <CardActions>
+          <Button href="https://nicoledodge.github.io/TravelBuddyApp/" size="small" color="primary">
+            Check it out!
+          </Button>
+          <Button href="https://github.com/nicoledodge/TravelBuddyApp" size="small" color="primary">
+            Github
+          </Button>
+        </CardActions>
+      </Card>
     );
-}
-
-export default Portfolio;
+  }

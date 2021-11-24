@@ -1,6 +1,5 @@
-
-import { Button } from '@material-ui/core';
 import React, { useState } from 'react';
+import { Button } from '@material-ui/core';
 import './style.css';
 
 function Contact() {
@@ -45,7 +44,7 @@ function Contact() {
                     placeholder="Last Name"
                 />
 
-                <Button type="button" onClick={handleFormSubmit} color="secondary">SUBMIT</Button>
+                <Button type="button" onClick={handleFormSubmit} color="secondary" variant="outlined">SUBMIT</Button>
             </form>
         </div>
     );
