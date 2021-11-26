@@ -6,10 +6,14 @@ import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
-//To do: add a footer
+import { ThemeProvider } from '@material-ui/core/styles'
+//import CssBaseline from '@material-ui/core/CssBaseline'
+import theme from './theme'
+
 
 function App() {
   return (
+<ThemeProvider theme={theme}>
     <div>
       <BrowserRouter>
       <div>
@@ -31,6 +35,7 @@ function App() {
         </div>
       </BrowserRouter>
     </div>
+    </ThemeProvider>
   );
 }
 
