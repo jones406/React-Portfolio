@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button } from '@material-ui/core';
-import './style.css';
+import '../assets/style.css';
 
 // Here we import a helper function that will check if the email is valid
 import { validateEmail } from '../utils/helpers';
