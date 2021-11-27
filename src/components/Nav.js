@@ -15,19 +15,22 @@ import MailTwoToneIcon from '@material-ui/icons/MailTwoTone';
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
-        backgroundColor: "white"
+        backgroundColor: "transparent",
     },
     title: {
         flexGrow: 1,
-        color: "black",
-        font: "sans"
     },
     headshot: {
-        width: 100,
-        paddingTop: 25,
-        paddingBottom: 25,
-        paddingRight: 20,
+        width: 120,
+        padding: 10,
+        marginRight: 20,
+        borderRadius: 50,
     },
+    links: {
+        backgroundColor: "gray",
+        borderRadius: 50,
+        margin: 3,
+    }
 }));
 
 export default function Nav() {
@@ -43,21 +46,21 @@ export default function Nav() {
                         Brooke Jones
                     </Typography>
                     <List component="nav">
-                        <ListItem button>
+                        <ListItem button className={classes.links}>
                             <ListItemIcon>
                                 <HomeTwoToneIcon />
                             </ListItemIcon>
                             <Link to="/">Home</Link>
                         </ListItem>
 
-                        <ListItem button>
+                        <ListItem button className={classes.links}>
                             <ListItemIcon>
                                 <WorkTwoToneIcon />
                             </ListItemIcon>
                             <Link to="/portfolio">Portfolio</Link>
                         </ListItem>
 
-                        <ListItem button>
+                        <ListItem button className={classes.links}>
                             <ListItemIcon>
                                 <MailTwoToneIcon />
                             </ListItemIcon>
