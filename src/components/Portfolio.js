@@ -33,7 +33,7 @@ const useStyles = makeStyles(theme => ({
 export default function Portfolio() {
   const classes = useStyles();
   return (
-    <Grid container spacing={2}>
+    <Grid container spacing={2} className={classes.root}>
       <Grid item  xs={6} sm={3}>
       <Card className={classes.card}>
         <CardActionArea>

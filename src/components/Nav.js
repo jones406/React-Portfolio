@@ -39,7 +39,7 @@ export default function Nav() {
                     <div>
                         <img className={classes.headshot} src={headshot} alt="headshot" />
                     </div>
-                    <Typography variant="h4" className={classes.title}>
+                    <Typography variant="h3" className={classes.title}>
                         Brooke Jones
                     </Typography>
                     <List component="nav">
