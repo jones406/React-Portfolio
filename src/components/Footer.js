@@ -8,7 +8,8 @@ const useStyles = makeStyles({
   button: {
     backgroundColor: "gray",
     borderRadius: 50,
-    marginTop: 50
+    marginTop: 50,
+    padding: 10,
     },
 });
 
@@ -17,7 +18,7 @@ function Footer() {
 
   return (
     <Button className={classes.button}>
-    <a href = {resume} target = "_blank">Resume</a>
+    <a href = {resume} target = "_blank">My Resume</a>
     </Button>
   );
 }

@@ -11,12 +11,15 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles(theme => ({
     root: {
         padding: theme.spacing(5, 5),
+        borderRadius: 15,
+        backgroundColor: "303030"
     },
     card: {
         flexGrow: 1,
         borderRadius: 15,
         margin: 10,
         padding: 10,
+        backgroundColor: "303030"
     }
 }));
 

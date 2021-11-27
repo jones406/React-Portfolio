@@ -23,8 +23,8 @@ const useStyles = makeStyles((theme) => ({
     headshot: {
         width: 120,
         padding: 10,
-        marginRight: 20,
-        borderRadius: 50,
+        marginRight: "5 vw",
+        borderRadius: 60,
     },
     links: {
         backgroundColor: "gray",
