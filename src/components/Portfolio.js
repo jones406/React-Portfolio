@@ -7,19 +7,26 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import pr1Image from '../assets/images/Prj1.png'
 import Grid from '@material-ui/core/Grid';
+import pr1Image from '../assets/images/Prj1.png'
+import pr2Image from '../assets/images/Prj2.png'
+
 
 const useStyles = makeStyles(theme => ({
   root: {
-    padding: theme.spacing(4, 1),
-  },card: {
+    padding: theme.spacing(3, 1),
+  },
+  card: {
     maxWidth: 345,
+    minHeight: 475,
     flexGrow: 1,
+    borderRadius: 25,
   },
   media: {
+    maxHeight: 250,
     maxWidth: 300,
     padding: 10,
+    borderRadius: 25,
   }
 }));
 
@@ -60,7 +67,7 @@ export default function Portfolio() {
         <CardActionArea>
           <CardMedia
             className={classes.media}
-            component="img" src={pr1Image}
+            component="img" src={pr2Image}
             title="TravelBuddy App image"
           />
           <CardContent>
