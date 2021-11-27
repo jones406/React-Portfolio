@@ -13,30 +13,31 @@ import theme from './theme'
 
 function App() {
   return (
-<ThemeProvider theme={theme}>
-    <div>
-      <BrowserRouter>
+    <ThemeProvider theme={theme}>
       <div>
-        <Nav />
+        <BrowserRouter>
+          <div>
+            <Nav />
+          </div>
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route exact path="/portfolio">
+              <Portfolio />
+            </Route>
+            <Route exact path="/contact">
+              <Contact />
+            </Route>
+          </Switch>
+          <div>
+            <Footer />
+          </div>
+        </BrowserRouter>
       </div>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route exact path="/portfolio">
-            <Portfolio />
-          </Route>
-          <Route exact path="/contact">
-            <Contact />
-          </Route>
-        </Switch>
-        <div>
-          <Footer />
-        </div>
-      </BrowserRouter>
-    </div>
     </ThemeProvider>
   );
 }
 
 export default App;
+
