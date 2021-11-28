@@ -17,21 +17,29 @@ import comingSoonImage from '../assets/images/comingsoon.png'
 
 const useStyles = makeStyles(theme => ({
   root: {
-    padding: theme.spacing(3, 1),
+    padding: theme.spacing(3, 3),
     flexGrow: 1
   },
   card: {
-    maxWidth: 440,
-    minHeight: 575,
+    maxWidth: 400,
+    minHeight: 500,
     flexGrow: 1,
     borderRadius: 25,
   },
   media: {
-    minHeight: 250,
+    minHeight: 315,
     maxHeight: 250,
-    maxWidth: 360,
+    maxWidth: 400,
     padding: 10,
     borderRadius: 25,
+  },
+  button: {
+    backgroundColor: "gray",
+    borderRadius: 50,
+    margin: 3,
+    paddingLeft: 10,
+    paddingRight: 10,
+
   }
 }));
 
@@ -39,7 +47,7 @@ export default function Portfolio() {
   const classes = useStyles();
   return (
     <Grid container spacing={2} className={classes.root}>
-      <Grid item xs={6} sm={3}>
+      <Grid item xs={12} sm={6} lg={4}>
         <Card className={classes.card}>
           <CardActionArea>
             <CardMedia
@@ -57,17 +65,17 @@ export default function Portfolio() {
             </CardContent>
           </CardActionArea>
           <CardActions>
-            <Button href="https://nicoledodge.github.io/TravelBuddyApp/" size="small" color="primary">
+            <Button className={classes.button} href="https://nicoledodge.github.io/TravelBuddyApp/" size="small" color="primary">
               Check it out!
             </Button>
-            <Button href="https://github.com/nicoledodge/TravelBuddyApp" size="small" color="primary">
+            <Button className={classes.button} href="https://github.com/nicoledodge/TravelBuddyApp" size="small" color="primary">
               Github
             </Button>
           </CardActions>
         </Card>
       </Grid>
 
-      <Grid item xs={6} sm={3}>
+      <Grid item xs={12} sm={6} lg={4}>
         <Card className={classes.card}>
           <CardActionArea>
             <CardMedia
@@ -85,17 +93,17 @@ export default function Portfolio() {
             </CardContent>
           </CardActionArea>
           <CardActions>
-            <Button href="https://feed-your-lifestyle.herokuapp.com/" size="small" color="primary">
+            <Button className={classes.button} href="https://feed-your-lifestyle.herokuapp.com/" size="small" color="primary">
               Check it out!
             </Button>
-            <Button href="https://github.com/Delmanat3/Feed-Your-Lifesyle" size="small" color="primary">
+            <Button  className={classes.button} href="https://github.com/Delmanat3/Feed-Your-Lifesyle" size="small" color="primary">
               Github
             </Button>
           </CardActions>
         </Card>
       </Grid>
 
-      <Grid item xs={6} sm={3}>
+      <Grid item xs={12} sm={6} lg={4}>
         <Card className={classes.card}>
           <CardActionArea>
             <CardMedia
@@ -113,17 +121,17 @@ export default function Portfolio() {
             </CardContent>
           </CardActionArea>
           <CardActions>
-            <Button href="https://jones406.github.io/Homework-6-WeatherDashboard/" size="small" color="primary">
+            <Button className={classes.button} href="https://jones406.github.io/Homework-6-WeatherDashboard/" size="small" color="primary">
               Check it out!
             </Button>
-            <Button href="https://github.com/jones406/Homework-6-WeatherDashboard" size="small" color="primary">
+            <Button className={classes.button} href="https://github.com/jones406/Homework-6-WeatherDashboard" size="small" color="primary">
               Github
             </Button>
           </CardActions>
         </Card>
       </Grid>
 
-      <Grid item xs={6} sm={3}>
+      <Grid item xs={12} sm={6} lg={4}>
         <Card className={classes.card}>
           <CardActionArea>
             <CardMedia
@@ -141,17 +149,17 @@ export default function Portfolio() {
             </CardContent>
           </CardActionArea>
           <CardActions>
-            <Button href="https://jones406.github.io/Homework-5-WorkdayScheduler/" size="small" color="primary">
+            <Button className={classes.button} href="https://jones406.github.io/Homework-5-WorkdayScheduler/" size="small" color="primary">
               Check it out!
             </Button>
-            <Button href="https://github.com/jones406/Homework-5-WorkdayScheduler" size="small" color="primary">
+            <Button className={classes.button} href="https://github.com/jones406/Homework-5-WorkdayScheduler" size="small" color="primary">
               Github
             </Button>
           </CardActions>
         </Card>
       </Grid>
 
-      <Grid item xs={6} sm={3}>
+      <Grid item xs={12} sm={6} lg={4}>
         <Card className={classes.card}>
           <CardActionArea>
             <CardMedia
@@ -169,7 +177,7 @@ export default function Portfolio() {
             </CardContent>
           </CardActionArea>
           <CardActions>
-            <Button href="https://github.com/jones406/Homework-12-EmployeeTracker" size="small" color="primary">
+            <Button className={classes.button} href="https://github.com/jones406/Homework-12-EmployeeTracker" size="small" color="primary">
               Github
             </Button>
           </CardActions>
@@ -177,7 +185,7 @@ export default function Portfolio() {
       </Grid>
 
 
-      <Grid item xs={6} sm={3}>
+      <Grid item xs={12} sm={6} lg={4}>
         <Card className={classes.card}>
           <CardActionArea>
             <CardMedia
@@ -195,10 +203,10 @@ export default function Portfolio() {
             </CardContent>
           </CardActionArea>
           <CardActions>
-            <Button href="https://github.com/jones406?tab=repositories" size="small" color="primary">
+            <Button className={classes.button} href="https://github.com/jones406?tab=repositories" size="small" color="primary">
               Check it out!
             </Button>
-            <Button href="https://github.com/jones406?tab=repositories" size="small" color="primary">
+            <Button className={classes.button} href="https://github.com/jones406?tab=repositories" size="small" color="primary">
               Github
             </Button>
           </CardActions>
