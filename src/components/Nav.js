@@ -46,9 +46,7 @@ export default function Nav() {
                     <div>
                         <img className={classes.headshot} src={headshot} alt="headshot" />
                     </div>
-                    <Typography variant="h3" className={classes.title}>
-                        Brooke Jones
-                    </Typography>
+                    <Typography variant="h3" className={classes.title}>Brooke Jones</Typography>
                     <List className={classes.list}>
                         <ListItem button className={classes.links}>
                             <ListItemIcon>
@@ -72,7 +70,6 @@ export default function Nav() {
                         </ListItem>
                     </List>
                 </Toolbar>
-
             </AppBar>
         </div>
     );
