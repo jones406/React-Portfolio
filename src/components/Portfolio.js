@@ -17,7 +17,7 @@ import comingSoonImage from '../assets/images/comingsoon.png'
 
 const useStyles = makeStyles(theme => ({
   root: {
-    padding: theme.spacing(3, 3),
+    padding: theme.spacing(2, 2),
     flexGrow: 1
   },
   card: {
@@ -39,14 +39,13 @@ const useStyles = makeStyles(theme => ({
     margin: 3,
     paddingLeft: 10,
     paddingRight: 10,
-
   }
 }));
 
 export default function Portfolio() {
   const classes = useStyles();
   return (
-    <Grid container spacing={2} className={classes.root}>
+    <Grid container spacing={1} className={classes.root}>
       <Grid item xs={12} sm={6} lg={4}>
         <Card className={classes.card}>
           <CardActionArea>

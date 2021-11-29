@@ -5,21 +5,32 @@ import { makeStyles } from '@material-ui/core/styles';
 
 
 const useStyles = makeStyles({
-  button: {
+  footer: {
+    
+  },
+    button: {
+    alignItems: "center",
     backgroundColor: "gray",
     borderRadius: 50,
-    marginTop: 50,
-    padding: 10,
+    margin: 5
     },
-});
+  });
 
 function Footer() {
   const classes = useStyles();
 
   return (
+    <div className={classes.footer}>
     <Button className={classes.button}>
-    <a href = {resume} target = "_blank">My Resume</a>
+    <a href = {resume} target = "_blank">Resume</a>
     </Button>
+    <Button className={classes.button}>
+    <a href = "https://www.linkedin.com/in/brookejones406/">LinkedIn</a>
+    </Button>
+    <Button className={classes.button}>
+    <a href = "https://github.com/jones406">GitHub</a>
+    </Button>
+    </div>
   );
 }
 

@@ -11,7 +11,6 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles(theme => ({
     root: {
         padding: theme.spacing(5, 5),
-        borderRadius: 15,
         backgroundColor: "303030"
     },
     card: {
@@ -27,7 +26,7 @@ function Home() {
     const classes = useStyles();
     return (
         <><Card className={classes.root}>
-            <Typography variant="h4">
+            <Typography variant="h5">
                 About Me
             </Typography>
 

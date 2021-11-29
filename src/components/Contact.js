@@ -13,18 +13,32 @@ import { validateEmail } from '../utils/helpers';
 const useStyles = makeStyles({
   root: {
     minWidth: 275,
-    border: 5
+    border: 5,
+    padding: 2,
   },
   bullet: {
     display: 'inline-block',
     margin: '0 2px',
     transform: 'scale(0.8)',
   },
-  title: {
+  form: {
     fontSize: 14,
+    display: "flex",
+    flexDirection: "column",
   },
-  pos: {
-    marginBottom: 12,
+  title: {
+    fontSize: 20,
+  },
+  field: {
+    fontSize: 14,
+    margin: 5,
+    width: "30%"
+  },
+  message: {
+    minHeight: "10rem",
+    width: "30%",
+    fontSize: 14,
+    margin: 5,
   },
 });
 
@@ -70,51 +84,46 @@ function Contact() {
   };
 
   const classes = useStyles();
-  const bull = <span className={classes.bullet}>•</span>;
-  
+
   return (
-   
     <Card className={classes.root}>
       <CardContent>
         <Typography className={classes.title} color="textSecondary" gutterBottom>
-          Send me a message by filling in the form below!
+          Send me a message!
         </Typography>
-        <form className="form">
-        <input
-          value={userName}
-          name="userName"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="Name"
-        />
-         <input
-          value={email}
-          name="email"
-          onChange={handleInputChange}
-          type="email"
-          placeholder="Email"
-        />
-        <input
-          value={message}
-          name="message"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="Message"
-        />
-        <Button type="button" onClick={handleFormSubmit} color="secondary" variant="outlined">SUBMIT</Button>
-      </form>
-      
+        <form className={classes.form}>
+          <input className={classes.field}
+            value={userName}
+            name="userName"
+            onChange={handleInputChange}
+            type="text"
+            placeholder="Name"
+          />
+          <input className={classes.field}
+            value={email}
+            name="email"
+            onChange={handleInputChange}
+            type="email"
+            placeholder="Email"
+          />
+          <input className={classes.message}
+            value={message}
+            name="message"
+            onChange={handleInputChange}
+            type="text"
+            placeholder="Message"
+          />
+          <Button type="button" onClick={handleFormSubmit} color="danger" variant="outlined">SUBMIT</Button>
+        </form>
       </CardContent>
       <CardActions>
-      {errorMessage && (
-        <div>
-          <p className="error-text">{errorMessage}</p>
-        </div>
-      )}
+        {errorMessage && (
+          <div>
+            <p className="error-text">{errorMessage}</p>
+          </div>
+        )}
       </CardActions>
     </Card>
-      
-    
   );
 }
 

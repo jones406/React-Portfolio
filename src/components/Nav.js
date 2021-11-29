@@ -15,25 +15,30 @@ import MailTwoToneIcon from '@material-ui/icons/MailTwoTone';
 const useStyles = makeStyles((theme) => ({
     root: {
         display: "flex",
-        alignItems: "stretch",
+        alignItems: "center",
         flexGrow: 1,
         backgroundColor: "transparent",
     },
     title: {
         flexGrow: 1,
+        paddingLeft: "10%",
+        paddingRight: "10%"
     },
     headshot: {
-        width: 120,
-        borderRadius: 60,
+        width: 180,
+        borderRadius: 100,
+        padding: "10%",
     },
     list: {
-        display: "flex",
-        flexDirection: "row",
+        paddingLeft: "10%",
+        paddingRight: "10%",
     },
     links: {
+        flexGrow: 1,
         backgroundColor: "gray",
         borderRadius: 50,
-        margin: 1,
+        margin: 5,
+        fontSize: "1em",
     }
 }));
 
@@ -46,7 +51,7 @@ export default function Nav() {
                     <div>
                         <img className={classes.headshot} src={headshot} alt="headshot" />
                     </div>
-                    <Typography variant="h3" className={classes.title}>Brooke Jones</Typography>
+                    <Typography variant="h4" className={classes.title}>Brooke Jones</Typography>
                     <List className={classes.list}>
                         <ListItem button className={classes.links}>
                             <ListItemIcon>
