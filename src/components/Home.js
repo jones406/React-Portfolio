@@ -35,7 +35,7 @@ function Home() {
                     Education
                 </Typography>
                 <Typography variant="body1">
-                    I am currently learning full-stack web development at The University of Austin, Texas. Previous to this, I received my B.S. in Geology from Portland State University.
+                    I am currently learning full-stack web development at The University of Texas at Austin. Previous to this, I received my B.S. in Geology from Portland State University.
                 </Typography>
             </Card><Card className={classes.card}>
                 <Typography variant="h6">

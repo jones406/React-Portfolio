@@ -5,7 +5,6 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import '../assets/style.css';
 
 //Import helper function to check if email is valid
 import { validateEmail } from '../utils/helpers';
@@ -40,6 +39,10 @@ const useStyles = makeStyles({
     fontSize: 14,
     margin: 5,
   },
+  button: {
+    maxWidth: "15%",
+    justifyContent: "row",
+  }
 });
 
 function Contact() {
@@ -113,7 +116,7 @@ function Contact() {
             type="text"
             placeholder="Message"
           />
-          <Button type="button" onClick={handleFormSubmit} color="danger" variant="outlined">SUBMIT</Button>
+          <Button className={classes.button} type="button" onClick={handleFormSubmit} color="danger" variant="contained">SUBMIT</Button>
         </form>
       </CardContent>
       <CardActions>

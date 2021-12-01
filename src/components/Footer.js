@@ -6,13 +6,15 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
   footer: {
-    
+    display: "flex",
+    justifyContent: "center",
+    marginTop: 10,
   },
     button: {
-    alignItems: "center",
-    backgroundColor: "gray",
-    borderRadius: 50,
-    margin: 5
+      alignItems: "center",
+      backgroundColor: "gray",
+      borderRadius: 50,
+      margin: 5
     },
   });
 

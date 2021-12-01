@@ -15,30 +15,28 @@ import MailTwoToneIcon from '@material-ui/icons/MailTwoTone';
 const useStyles = makeStyles((theme) => ({
     root: {
         display: "flex",
-        alignItems: "center",
+        alignItems: "space-between",
         flexGrow: 1,
         backgroundColor: "transparent",
     },
     title: {
-        flexGrow: 1,
-        paddingLeft: "10%",
-        paddingRight: "10%"
+        margin: "1%"
     },
     headshot: {
-        width: 180,
+        width: "15%",
+        margin: "1%",
         borderRadius: 100,
-        padding: "10%",
     },
     list: {
-        paddingLeft: "10%",
-        paddingRight: "10%",
+        display: "flex",
+        alignItems: "space-between",
+        marginRight: "5%",
+        marginLeft: "5%"
     },
     links: {
-        flexGrow: 1,
         backgroundColor: "gray",
         borderRadius: 50,
-        margin: 5,
-        fontSize: "1em",
+        margin: "1%",
     }
 }));
 
@@ -48,9 +46,7 @@ export default function Nav() {
         <div>
             <AppBar className={classes.root} position="static" color="transparent">
                 <Toolbar>
-                    <div>
                         <img className={classes.headshot} src={headshot} alt="headshot" />
-                    </div>
                     <Typography variant="h4" className={classes.title}>Brooke Jones</Typography>
                     <List className={classes.list}>
                         <ListItem button className={classes.links}>
@@ -59,14 +55,12 @@ export default function Nav() {
                             </ListItemIcon>
                             <Link to="/">Home</Link>
                         </ListItem>
-
                         <ListItem button className={classes.links}>
                             <ListItemIcon>
                                 <WorkTwoToneIcon />
                             </ListItemIcon>
                             <Link to="/portfolio">Portfolio</Link>
                         </ListItem>
-
                         <ListItem button className={classes.links}>
                             <ListItemIcon>
                                 <MailTwoToneIcon />
@@ -79,27 +73,3 @@ export default function Nav() {
         </div>
     );
 }
-
-
-// function Nav() {
-//     return (
-//         <nav> Brooke Jones
-//             <div>
-//             <img className = "headshot" src={headshot} alt = "headshot of Brooke Jones" />
-//             </div>
-//             <ul>
-//                 <li>
-//                     <Link to="/">Home</Link>
-//                 </li>
-//                 <li>
-//                     <Link to="/portfolio">Portfolio</Link>
-//                 </li>
-//                 <li>
-//                     <Link to="/contact">Contact</Link>
-//                 </li>
-//             </ul>
-//         </nav>
-//     );
-// }
-
-// export default Nav;
