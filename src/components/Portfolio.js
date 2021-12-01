@@ -17,19 +17,22 @@ import comingSoonImage from '../assets/images/comingsoon.png'
 
 const useStyles = makeStyles(theme => ({
   root: {
-    padding: theme.spacing(2, 2),
-    flexGrow: 1
+    padding: theme.spacing(5, 0),
+    flexGrow: 1,
+    display: "flex",
+    alignItems: "center"
   },
   card: {
-    maxWidth: 400,
-    minHeight: 500,
+    maxWidth: 500,
+    height: 600,
     flexGrow: 1,
     borderRadius: 25,
   },
   media: {
-    minHeight: 315,
-    maxHeight: 250,
+    minHeight: 325,
+    maxHeight: 325,
     maxWidth: 400,
+    overflow: "hidden",
     padding: 10,
     borderRadius: 25,
   },
@@ -46,7 +49,7 @@ export default function Portfolio() {
   const classes = useStyles();
   return (
     <Grid container spacing={1} className={classes.root}>
-      <Grid item xs={12} sm={6} lg={4}>
+      <Grid item xs={12} sm={4} md={3}>
         <Card className={classes.card}>
           <CardActionArea>
             <CardMedia
@@ -59,7 +62,7 @@ export default function Portfolio() {
                 TravelBuddy
               </Typography>
               <Typography variant="body2" color="textSecondary" component="p">
-                Plan your travels by getting the weather forecast and popular events for your destination. This app was a product of my first group project in coding bootcamp.
+                Plan your travels by getting the weather forecast and popular events for your destination. This app is a product of my first group project from coding bootcamp.
               </Typography>
             </CardContent>
           </CardActionArea>
@@ -74,7 +77,7 @@ export default function Portfolio() {
         </Card>
       </Grid>
 
-      <Grid item xs={12} sm={6} lg={4}>
+      <Grid item xs={12} sm={4} md={3}>
         <Card className={classes.card}>
           <CardActionArea>
             <CardMedia
@@ -87,7 +90,7 @@ export default function Portfolio() {
                 Feed Your Lifestyle
               </Typography>
               <Typography variant="body2" color="textSecondary" component="p">
-                Feed Your Lifestyle helps you find great recipes given your lifestyle goals or health concerns. This app was a product of my second group project in coding bootcamp.
+                Find great recipes given your lifestyle goals and health concerns! This app was created for my second group project in coding bootcamp.
               </Typography>
             </CardContent>
           </CardActionArea>
@@ -102,7 +105,7 @@ export default function Portfolio() {
         </Card>
       </Grid>
 
-      <Grid item xs={12} sm={6} lg={4}>
+      <Grid item xs={12} sm={4} md={3}>
         <Card className={classes.card}>
           <CardActionArea>
             <CardMedia
@@ -130,7 +133,7 @@ export default function Portfolio() {
         </Card>
       </Grid>
 
-      <Grid item xs={12} sm={6} lg={4}>
+      <Grid item xs={12} sm={4} md={3}>
         <Card className={classes.card}>
           <CardActionArea>
             <CardMedia
@@ -143,7 +146,7 @@ export default function Portfolio() {
                 WorkDay Scheduler
               </Typography>
               <Typography variant="body2" color="textSecondary" component="p">
-                This simple app uses local storage to help you plan your workday. You can add, edit, and delete notes and reminders.
+                This simple app allows a user to plan their workday. I used js and local storage to allow users to add, edit, and delete notes and reminders.
               </Typography>
             </CardContent>
           </CardActionArea>
@@ -158,7 +161,7 @@ export default function Portfolio() {
         </Card>
       </Grid>
 
-      <Grid item xs={12} sm={6} lg={4}>
+      <Grid item xs={12} sm={4} md={3}>
         <Card className={classes.card}>
           <CardActionArea>
             <CardMedia
@@ -171,7 +174,7 @@ export default function Portfolio() {
                 Employee Tracker 
               </Typography>
               <Typography variant="body2" color="textSecondary" component="p">
-                This command-line application uses node.js, inquierer, and MySQL and was built from scratch to manage an employee database.
+                I created this CLI using node.js, inquirer, and SQL to explore how to create and maintain an employee database.
               </Typography>
             </CardContent>
           </CardActionArea>
@@ -184,7 +187,7 @@ export default function Portfolio() {
       </Grid>
 
 
-      <Grid item xs={12} sm={6} lg={4}>
+      <Grid item xs={12} sm={4} md={3}>
         <Card className={classes.card}>
           <CardActionArea>
             <CardMedia
@@ -211,8 +214,6 @@ export default function Portfolio() {
           </CardActions>
         </Card>
       </Grid>
-
-
     </Grid>
   );
 }

@@ -15,9 +15,9 @@ import MailTwoToneIcon from '@material-ui/icons/MailTwoTone';
 const useStyles = makeStyles((theme) => ({
     root: {
         display: "flex",
-        alignItems: "space-between",
+        alignItems: "center",
+        justifyContent: "center",
         flexGrow: 1,
-        backgroundColor: "transparent",
     },
     title: {
         margin: "1%"
@@ -29,14 +29,12 @@ const useStyles = makeStyles((theme) => ({
     },
     list: {
         display: "flex",
-        alignItems: "space-between",
         marginRight: "5%",
         marginLeft: "5%"
     },
     links: {
         backgroundColor: "gray",
         borderRadius: 50,
-        margin: "1%",
     }
 }));
 
@@ -46,27 +44,32 @@ export default function Nav() {
         <div>
             <AppBar className={classes.root} position="static" color="transparent">
                 <Toolbar>
-                        <img className={classes.headshot} src={headshot} alt="headshot" />
+                    <img className={classes.headshot} src={headshot} alt="headshot" />
                     <Typography variant="h4" className={classes.title}>Brooke Jones</Typography>
                     <List className={classes.list}>
+                    <Link to="/">
                         <ListItem button className={classes.links}>
                             <ListItemIcon>
                                 <HomeTwoToneIcon />
                             </ListItemIcon>
-                            <Link to="/">Home</Link>
+                            Home
                         </ListItem>
-                        <ListItem button className={classes.links}>
+                        </Link>
+                        <Link to="/portfolio"><ListItem button className={classes.links}>
                             <ListItemIcon>
                                 <WorkTwoToneIcon />
                             </ListItemIcon>
-                            <Link to="/portfolio">Portfolio</Link>
+                            Portfolio
                         </ListItem>
+                        </Link>
+                        <Link to="/contact">
                         <ListItem button className={classes.links}>
                             <ListItemIcon>
                                 <MailTwoToneIcon />
                             </ListItemIcon>
-                            <Link to="/contact">Contact</Link>
+                            Contact
                         </ListItem>
+                        </Link>
                     </List>
                 </Toolbar>
             </AppBar>

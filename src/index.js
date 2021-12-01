@@ -8,6 +8,13 @@ const theme = createTheme({
   palette: {
     type: "dark",
   },
+  typography: {
+    fontFamily: [
+      'Kufam', 
+      'sans-serif',
+      ].join(','),
+  },
+  spacing: 1,
 });
 
 ReactDOM.render(

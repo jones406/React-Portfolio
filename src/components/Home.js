@@ -1,24 +1,19 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(theme => ({
     root: {
-        padding: theme.spacing(5, 5),
-        backgroundColor: "303030"
+        flexGrow: 1,
+        margin: 5,
+        backgroundColor: "303030",
+        padding: 30,
     },
     card: {
-        flexGrow: 1,
         borderRadius: 15,
         margin: 10,
         padding: 10,
-        backgroundColor: "303030"
     }
 }));
 
