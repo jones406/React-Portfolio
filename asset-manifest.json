@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.js": "/React-Portfolio/static/js/main.b3add503.chunk.js",
+    "main.js.map": "/React-Portfolio/static/js/main.b3add503.chunk.js.map",
+    "runtime-main.js": "/React-Portfolio/static/js/runtime-main.23621b34.js",
+    "runtime-main.js.map": "/React-Portfolio/static/js/runtime-main.23621b34.js.map",
+    "static/js/2.b41ca5cb.chunk.js": "/React-Portfolio/static/js/2.b41ca5cb.chunk.js",
+    "static/js/2.b41ca5cb.chunk.js.map": "/React-Portfolio/static/js/2.b41ca5cb.chunk.js.map",
+    "index.html": "/React-Portfolio/index.html",
+    "static/js/2.b41ca5cb.chunk.js.LICENSE.txt": "/React-Portfolio/static/js/2.b41ca5cb.chunk.js.LICENSE.txt",
+    "static/media/HW5.533f40c1.png": "/React-Portfolio/static/media/HW5.533f40c1.png",
+    "static/media/HW6.3f6a3988.png": "/React-Portfolio/static/media/HW6.3f6a3988.png",
+    "static/media/Prj1.54a9b01f.png": "/React-Portfolio/static/media/Prj1.54a9b01f.png",
+    "static/media/Prj2.1.409edee6.png": "/React-Portfolio/static/media/Prj2.1.409edee6.png",
+    "static/media/comingsoon.37050060.png": "/React-Portfolio/static/media/comingsoon.37050060.png",
+    "static/media/employee.8864e816.png": "/React-Portfolio/static/media/employee.8864e816.png",
+    "static/media/headshot.d529711c.png": "/React-Portfolio/static/media/headshot.d529711c.png",
+    "static/media/resume.9259e9f0.pdf": "/React-Portfolio/static/media/resume.9259e9f0.pdf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.23621b34.js",
+    "static/js/2.b41ca5cb.chunk.js",
+    "static/js/main.b3add503.chunk.js"
+  ]
+}
